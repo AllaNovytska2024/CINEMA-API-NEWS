@@ -15,7 +15,7 @@ async function fetchData() {
         const data = await response.json();
         console.log(data);
         // Обрезаем массив до 50 элементов
-        const films = data.articles.slice(0, 5);
+        const films = data.articles.slice(0, 50);
         films.map((film) => {
             const card = document.createElement("div");
             card.className = "film-card";
