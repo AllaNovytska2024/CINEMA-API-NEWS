@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+
+header {
+  position: sticky;
+  top: 0px;
+  color: white;
+  display: flex;
+  padding: 15px 20px;
+  width: 100%;
+  height: 95px;
+  background-color: rgb(101, 121, 234);
+  justify-content: space-between;
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+main {
+  padding: 0px;
+  flex: 1;
+  background-color: rgb(237, 237, 161);
+}
+
+.loader {
+  width: 69px;
+  height: 69px;
+  border: 9px solid goldenrod;
+  border-bottom-color: gold;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1.2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-hide {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: gold;
+}
+
+.container-film{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding-top: 10px;
+}
+/* 
+.film-card {
+  border: 5px double rgb(249, 64, 43);
+  border-radius: 35px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+} */
+
+.film-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.film-card img {
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
