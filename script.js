@@ -22,7 +22,7 @@ async function fetchData() {
 
             const title = document.createElement("h3");
             title.textContent = `Title: ${film.title}`;
-
+ 
             const description = document.createElement("p");
             description.textContent = `Description: ${film.description}`;
 
