@@ -48,7 +48,7 @@ async function fetchData() {
       } else {
         img.alt = "No image available";
       }
-
+      loader.classList.toggle("loader-hide");
       card.append(
         img,
         title,
